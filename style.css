@@ -36,7 +36,7 @@ body {
 	margin-bottom: 30px;
 }
 
-.seat {
+.seats {
 	background-color: #435863;
 	height: 0.7rem;
 	width: 1rem;
@@ -45,28 +45,28 @@ body {
 	border-top-right-radius: 0.7rem;
 }
 
-.seat.selected {
+.seats.selected {
 	background-color: rgb(0, 255, 0);
 }
 
-.seat.occupied {
+.seats.occupied {
 	background-color: red;
 }
 
-.seat:nth-of-type(2) {
+.seats:nth-of-type(2) {
 	margin-right: 1rem;
 }
 
-.seat:nth-last-of-type(2) {
+.seats:nth-last-of-type(2) {
 	margin-left: 1rem;
 }
 
-.seat:not(.occupied, .selected):hover {
+.seats:not(.occupied, .selected):hover {
 	cursor: pointer;
 	transform: scale(1.2);
 }
 
-.legend .seat:not(.occupied):hover {
+.legend .seats:not(.occupied):hover {
 	cursor: default;
 	transform: scale(1);
 }
