@@ -5,6 +5,7 @@ const seats = document.querySelectorAll(".row .seats:not(.occupied)");
 const counter = document.getElementById("counter");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
+const acceptButton = document.getElementById("btn-accept");
 
 populateUI();
 
@@ -66,5 +67,9 @@ movieSelect.addEventListener("change", (e) => {
 
 	updateSelectedSeats();
 });
-
+acceptButton.onclick = function () {
+	if (e.target.classList.contains("seats") && !e.target.classList.contains("occupied") && e.target.classList.contains("selected")) {
+		e.target.classList.toggle("occupied");
+	}
+};
 updateSelectedSeats();

@@ -120,3 +120,19 @@ p.text {
 p.text span {
 	color: aqua;
 }
+
+#btn-accept {
+	padding: 0.3rem;
+	border-radius: 0.5rem;
+	margin-top: 0.6rem;
+	background-color: #435863;
+	border: 0;
+	color: white;
+	transition: ease 1s;
+}
+
+#btn-accept:hover {
+	cursor: pointer;
+	color: aqua;
+	background-color: black;
+}
